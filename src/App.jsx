@@ -12,7 +12,7 @@ function App() {
         <p>Práctica SPA</p>
 
       </header>
-
+      
       <AppRouter/>
 
       <footer>

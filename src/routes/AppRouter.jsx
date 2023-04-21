@@ -1,16 +1,20 @@
-import { Route, Routes, Navigate } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import {ProductsRoutes} from './ProductsRoutes'
+import { AuthRoutes } from './AuthRoutes'
 
 export const AppRouter = () => {
+
     return (
 
         <>
             <Routes>
-                <Route path='login' element={<LoginPage />} />
-
-                <Route path='/*' element={<Navigate to={'/'} />} />
+                    
+                <Route path='login' element={<AuthRoutes/>} />
+                <Route path='/*' element={<ProductsRoutes/>} />
 
             </Routes>
         </>
 
     )
 }
+

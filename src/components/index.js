@@ -1,7 +1,1 @@
-export * from './HomePage'
-export * from './LoginPage'
-export * from './SingleProduct'
-export * from './SearchPage'
-export * from './DetailView'
 export * from './NavBar'
-export * from './Products'
