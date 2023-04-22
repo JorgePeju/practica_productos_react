@@ -1,7 +1,12 @@
+import { Register } from "../components"
 
 
 export const RegisterPage = () => {
+
   return (
-    <div>RegisterPage</div>
+
+    <>
+    <Register/>
+    </>
   )
 }

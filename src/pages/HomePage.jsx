@@ -1,7 +1,14 @@
-
+import {Home} from '../components'
 
 export const HomePage = () => {
+
   return (
-    <div>HomePage</div>
+
+    <>
+
+    <Home/>
+    
+    </>
+
   )
 }

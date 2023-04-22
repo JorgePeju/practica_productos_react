@@ -1,26 +1,26 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import {DetailView } from '../products/components/index'
-import {ProductsPage} from '../products/pages/index'
-import {HomePage, SearchPage} from '../pages/index'
-import {NavBar} from '../components/index'
+import { HomePage, SearchPage } from '../pages'
+import { LaptopsPage, MenShoesPage, ProductsPage, SunglassesPage } from '../products/pages'
+import { NavBarAuth } from '../auth/components/NavBarAuth'
+
 
 export const ProductsRoutes = () => {
 
   return (
 
     <>
-
-      <NavBar />
+      <NavBarAuth />
 
       <main>
 
         <Routes>
 
           <Route path='/' element={<HomePage />} />
-          <Route path='search' element={<SearchPage />} />
-          <Route path='products' element={<ProductsPage />} />
-          <Route path='detail-view/:id' element={<DetailView />} />
-          <Route path='/' element={<Navigate to='/products'/>} />
+          <Route path='/search' element={<SearchPage />} />
+          <Route path='/products' element={<ProductsPage />} />
+          <Route path='/men-shoes' element={<MenShoesPage />} />
+          <Route path='/sunglasses' element={<SunglassesPage />} />
+          <Route path='/laptops' element={<LaptopsPage />} />
 
         </Routes>
 

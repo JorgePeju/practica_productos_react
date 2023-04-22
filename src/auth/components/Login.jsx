@@ -2,6 +2,6 @@
 
 export const Login = () => {
   return (
-    <div>Login</div>
+    <div>Estamos en Login</div>
   )
 }

@@ -1,4 +1,6 @@
 import {LoginPage, RegisterPage } from '../auth/pages/index'
+import {NavBar} from '../components/index'
+import { Route, Routes } from 'react-router-dom'
 
 export const AuthRoutes = () => {
 
@@ -7,7 +9,7 @@ export const AuthRoutes = () => {
 
    <>
 
-    <NavBar />
+   <NavBar />
 
     <main>
 

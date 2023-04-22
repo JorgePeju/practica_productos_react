@@ -1,7 +1,15 @@
+import { AllProducts } from '../components'
 
 
 export const ProductsPage = () => {
+
   return (
-    <div>ProductsPage</div>
+
+    <>
+
+    <AllProducts/>
+    
+    </>
+
   )
 }

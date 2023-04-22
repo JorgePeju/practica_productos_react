@@ -2,6 +2,6 @@
 
 export const Register = () => {
   return (
-    <div>Register</div>
+    <div>Estamos en register</div>
   )
 }

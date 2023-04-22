@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import {ProductsRoutes} from './ProductsRoutes'
+import { ProductsRoutes } from './ProductsRoutes'
 import { AuthRoutes } from './AuthRoutes'
 
 export const AppRouter = () => {
@@ -8,9 +8,9 @@ export const AppRouter = () => {
 
         <>
             <Routes>
-                    
-                <Route path='login' element={<AuthRoutes/>} />
-                <Route path='/*' element={<ProductsRoutes/>} />
+
+                <Route path='/*' element={<AuthRoutes />} />
+                <Route path='/index/*' element={<ProductsRoutes />} />
 
             </Routes>
         </>

@@ -1,7 +1,13 @@
 
 
 export const AllProducts = () => {
+
   return (
-    <div>AllProducts</div>
+
+    <>
+    <div>Estamos en All Products</div>
+    </>
+
+
   )
 }
