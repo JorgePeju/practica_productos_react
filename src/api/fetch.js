@@ -1,4 +1,4 @@
-import { getUrl } from '../helpers/getURL';
+
 
 export const consultation = async (env, param) => {
 

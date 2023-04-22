@@ -15,7 +15,7 @@ export const SingleProduct = ({id, title,description, photo, price, rating, }) =
 
           </div>
 
-          <p> Precio: {price.toLocaleString('de-DE')} € </p>
+          <p> Precio: {price} € </p>
 
           <button>
 
