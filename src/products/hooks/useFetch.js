@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getProducts } from '../products/helpers/getProducts'
+import { getProducts } from '../helpers/getProducts'
 
 
 
@@ -7,7 +7,7 @@ export const useFetch = (category) => {
 
     const [products, setProducts] = useState([]);
 
-    const fetchingProducts = async () => {
+    const consultProducts = async () => {
 
         const productItem = await getProducts(category);
 
@@ -17,7 +17,7 @@ export const useFetch = (category) => {
 
     useEffect(() => {
 
-        fetchingProducts();
+        consultProducts();
 
     }, []);
 
