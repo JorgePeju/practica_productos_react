@@ -2,9 +2,7 @@ import { getUrl } from '../helpers/getURL';
 
 export const consultation = async (env, param) => {
 
-  const url = getUrl(env, param);
-
-
+  const url = env + param
 
   try {
 

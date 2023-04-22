@@ -22,7 +22,7 @@ export const DetailView = () => {
 
           </div>
           <p>{product.description}</p>
-          <p> Precio: {product.price.toLocaleString('de-DE')} € </p>
+          <p> Precio: {product.price} € </p>
           <p> Valoración: {product.rating} </p>
 
         </article>
