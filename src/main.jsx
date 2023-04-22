@@ -7,10 +7,12 @@ import { UserProvider } from './auth/context/UserProvider.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   //<React.StrictMode>
-  <BrowserRouter >
-    <UserProvider>
+  <UserProvider>
+    <BrowserRouter >
+
       <App />
-    </UserProvider>
-  </BrowserRouter >
+
+    </BrowserRouter >
+  </UserProvider>
   //</React.StrictMode>,
 )
