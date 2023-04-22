@@ -3,30 +3,27 @@ import { getProducts } from '../helpers/getProducts'
 
 
 
-export const useFetch = (category) => {
-
+export const useFetch = (id ,category ) => {
+  
     const [products, setProducts] = useState([]);
-
+    
     const consultProducts = async () => {
-
-        const productItem = await getProducts(category);
+        
+        const productItem = await getProducts(id ,category );
 
         setProducts(productItem);
 
     };
 
     useEffect(() => {
-
+       
         consultProducts();
 
     }, []);
 
-
-
-    return{
+    return {
 
         products
-        
-    };
 
+    };
 };

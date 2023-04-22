@@ -4,7 +4,7 @@ import { SingleProduct } from "./SingleProduct"
 
 export const GridProducts = ({category}) => {
 
-  const { products } = useFetch(category)
+  const { products } = useFetch( null, category)
 
   return (
 

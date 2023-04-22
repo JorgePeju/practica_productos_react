@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const SingleProduct = ({id, title, description, photo, price, rating, category}) => {
+export const SingleProduct = ({id, title,description, photo, price, rating, }) => {
 
   return (
 
@@ -17,7 +17,7 @@ export const SingleProduct = ({id, title, description, photo, price, rating, cat
 
           <p> Precio: {price.toLocaleString('de-DE')} € </p>
 
-          <button data-category={category}>
+          <button>
 
             <Link to={`/index/detail-view/${id}`}> Vista Detalle </Link>
 
