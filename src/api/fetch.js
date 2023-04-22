@@ -1,11 +1,15 @@
 
-const urlBaseDjson = 'https://dummyjson.com/products/category/'
+const urlBaseDjson = import.meta.env.VITE_URL_BASE_DJSON
 
-export const consultation = async (category) => {
+const urlDetailView = import.meta.env.VITE_URL_PRODUCT_DJSON
+
+export const consultation = async (category, id) => {
+
+    const urlFetch = category ? `${urlBaseDjson}${category}` : `${urlDetailView}${id}`;
 
     try {
 
-        const request = await fetch(`${urlBaseDjson}${category}`, {
+        const request = await fetch(urlFetch, {
 
             method: 'get',
             mode: 'cors',
