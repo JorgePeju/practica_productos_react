@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.37"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:65a3172a781fb17b0a32d5ef67a928835473f8dd8defde841222db6eeba8543aee9efbee9adb127c6dbc4b657bf0fb8e1a5e222a9f9ad1bf69022d0764f84538#npm:4.0.0-beta.1"],\
+            ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.38.0"],\
             ["eslint-plugin-react", "virtual:65a3172a781fb17b0a32d5ef67a928835473f8dd8defde841222db6eeba8543aee9efbee9adb127c6dbc4b657bf0fb8e1a5e222a9f9ad1bf69022d0764f84538#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:65a3172a781fb17b0a32d5ef67a928835473f8dd8defde841222db6eeba8543aee9efbee9adb127c6dbc4b657bf0fb8e1a5e222a9f9ad1bf69022d0764f84538#npm:4.6.0"],\
@@ -1369,6 +1370,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["doctrine", "npm:3.0.0"],\
             ["esutils", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv", [\
+        ["npm:16.0.3", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3058,6 +3068,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.37"],\
             ["@types/react-dom", "npm:18.0.11"],\
             ["@vitejs/plugin-react", "virtual:65a3172a781fb17b0a32d5ef67a928835473f8dd8defde841222db6eeba8543aee9efbee9adb127c6dbc4b657bf0fb8e1a5e222a9f9ad1bf69022d0764f84538#npm:4.0.0-beta.1"],\
+            ["dotenv", "npm:16.0.3"],\
             ["eslint", "npm:8.38.0"],\
             ["eslint-plugin-react", "virtual:65a3172a781fb17b0a32d5ef67a928835473f8dd8defde841222db6eeba8543aee9efbee9adb127c6dbc4b657bf0fb8e1a5e222a9f9ad1bf69022d0764f84538#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:65a3172a781fb17b0a32d5ef67a928835473f8dd8defde841222db6eeba8543aee9efbee9adb127c6dbc4b657bf0fb8e1a5e222a9f9ad1bf69022d0764f84538#npm:4.6.0"],\

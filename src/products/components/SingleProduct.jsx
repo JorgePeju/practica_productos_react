@@ -19,7 +19,7 @@ export const SingleProduct = ({id, title, description, photo, price, rating, cat
 
           <button data-category={category}>
 
-            <Link to={`/product/${id}`}> Vista Detalle </Link>
+            <Link to={`/index/detail-view/${id}`}> Vista Detalle </Link>
 
           </button>
         </article>
