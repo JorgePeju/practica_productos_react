@@ -7,6 +7,8 @@ VITE_URL_BASE_DJSON=https://dummyjson.com/products/category/
 
 VITE_URL_PRODUCT_DJSON=https://dummyjson.com/products/
 
+VITE_URL_SEARCH=
+
 ### Inicialización del proyecto:
 Para inicializar el proyecto abrir la terminal y escribir los siguientes comandos:
 

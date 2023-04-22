@@ -1,40 +1,34 @@
+import { getUrl } from '../helpers/getURL';
 
-const urlBaseDjson = import.meta.env.VITE_URL_BASE_DJSON
+export const consultation = async (env, param) => {
 
-const urlDetailView = import.meta.env.VITE_URL_PRODUCT_DJSON
+  const url = getUrl(env, param);
 
 
-export const consultation = async (id, category ) => {
 
-    console.log(id)
-    const urlFetch = id ?  `${urlDetailView}${id}` : `${urlBaseDjson}${category}`;
-    console.log(urlFetch)
-   
-    try {
+  try {
 
-        const request = await fetch(urlFetch, {
+    const request = await fetch(url, {
 
-            method: 'get',
-            mode: 'cors',
-            cache: 'force-cache'
+      method: 'get',
+      mode: 'cors',
+      cache: 'force-cache'
 
-        });
+    });
 
-        if (request.ok){
+    if (request.ok){
 
-            return request.json()
+      return request.json();
 
-        } else {
+    } else {
 
-            throw 'Error al conectar con la api'
+      throw new Error('Error al conectar con la api');
 
-        }
+    }
         
-    } catch (error) {
+  } catch (error) {
 
-        console.log(error);
-
-        throw new Error('Error al conectar con la API');
-        
-    };
-}
+    console.log(error);
+    throw new Error('Error al conectar con la API');
+  }
+};
