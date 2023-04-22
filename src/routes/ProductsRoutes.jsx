@@ -1,7 +1,7 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { HomePage, SearchPage } from '../pages'
-import { LaptopsPage, MenShoesPage, ProductsPage, SunglassesPage } from '../products/pages'
-import { NavBarAuth } from '../auth/components/NavBarAuth'
+import { LaptopsPage, MenShoesPage, ProductsPage, SunglassesPage, DetailViewPage } from '../products/pages'
+import {NavBar} from '../components'
 
 
 export const ProductsRoutes = () => {
@@ -9,7 +9,8 @@ export const ProductsRoutes = () => {
   return (
 
     <>
-      <NavBarAuth />
+   
+   <NavBar />
 
       <main>
 
@@ -21,6 +22,7 @@ export const ProductsRoutes = () => {
           <Route path='/men-shoes' element={<MenShoesPage />} />
           <Route path='/sunglasses' element={<SunglassesPage />} />
           <Route path='/laptops' element={<LaptopsPage />} />
+          <Route path='/detail-view/:id' element={<DetailViewPage />} />
 
         </Routes>
 

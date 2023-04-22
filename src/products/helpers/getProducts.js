@@ -1,17 +1,18 @@
 import { consultation } from '../../api/fetch';
 
-export const getProducts = async (category) => {
+export const getProducts = async (category, id) => {
 
     const { products } = await consultation(category);
 
-    const product = products.map(product => ({
+    const product = products.map(item => ({
 
-        id: product.id,
-        title: product.title,
-        description: product.description,
-        photo: product.thumbnail,
-        price: product.price,
-        rating: product.rating
+        id: item.id,
+        title: item.title,
+        description: item.description,
+        photo: item.thumbnail,
+        price: item.price,
+        rating: item.rating,
+        category
         
     }));
 

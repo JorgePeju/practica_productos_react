@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { useForm } from '../../hooks/useForm'
 import { UserContext } from '../context/UserContext'
 import { useNavigate} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export const Login = () => {
 
@@ -31,6 +32,10 @@ export const Login = () => {
 
   return (
       <>
+      
+          <div>
+            ¿Aún no tienes una cuenta?, pulse <Link to='/register'>aquí</Link> para registrarse
+          </div>
 
           <div className="login flex text-center justify-text">
 

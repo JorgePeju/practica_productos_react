@@ -1,7 +1,28 @@
-import React from 'react'
+import { useFetch } from "../hooks/useFetch"
+import { SingleProduct } from "./SingleProduct"
 
-export const GridProducts = () => {
+
+export const GridProducts = ({category}) => {
+
+  const { products } = useFetch(category)
+
   return (
-    <div>GridProducts</div>
+
+    <>
+
+      <div>
+
+        {
+          products.map(item => (
+
+            <SingleProduct key={item.id} {...item} />
+
+          ))
+        }
+
+      </div>
+
+    </>
+
   )
 }

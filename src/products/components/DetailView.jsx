@@ -2,6 +2,6 @@
 
 export const DetailView = () => {
   return (
-    <div>DetailView</div>
+    <div>Estamos en Detail View</div>
   )
 }

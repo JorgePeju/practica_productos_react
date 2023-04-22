@@ -2,23 +2,33 @@ import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
 
-  return (
+    return (
 
-    <>
-      <nav >
 
-        <ul >
+        <>
+            <nav >
 
-          <div>
+                <ul >
 
-            <li><Link to='/'>Login</Link></li>
-            <li><Link to='/register'>Register</Link></li>
-            
-          </div>
+                    <div>
 
-        </ul >
+                        <li><Link to='/index/products'>Productos</Link></li>
+                        <li><Link to='/index/sunglasses'>Gafas de sol</Link></li>
+                        <li><Link to='/index/men-shoes'>Zapatillas</Link></li>
+                        <li><Link to='/index/laptops'>Laptops</Link></li>
 
-      </nav>
-    </>
-  )
+                    </div>
+
+                    <div >
+
+                        <li><Link to='/index/logout'>Logout</Link></li>
+
+                    </div>
+
+                </ul >
+
+            </nav>
+        </>
+
+    )
 }

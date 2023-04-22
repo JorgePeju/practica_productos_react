@@ -1,10 +1,18 @@
+import { GridProducts } from "./GridProducts"
 
 
 export const MenShoes = () => {
 
+  
+  const category = 'mens-shoes'
+
   return (
 
-    <> Estamos en Shoes</>
+    <> 
+    
+    <GridProducts category={category} />
+
+    </>
 
   )
 }

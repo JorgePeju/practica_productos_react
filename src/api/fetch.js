@@ -1,9 +1,11 @@
 
+const urlBaseDjson = 'https://dummyjson.com/products/category/'
+
 export const consultation = async (category) => {
 
     try {
 
-        const request = await consultation(`https://dummyjson.com/products/category/${category}`, {
+        const request = await fetch(`${urlBaseDjson}${category}`, {
 
             method: 'get',
             mode: 'cors',
@@ -11,13 +13,15 @@ export const consultation = async (category) => {
 
         });
 
-        if(request){
+        if (request.ok){
 
-            const response = await request.json();
+            return request.json()
 
-            return response;
+        } else {
 
-        };
+            throw 'Error al conectar con la api'
+
+        }
         
     } catch (error) {
 
