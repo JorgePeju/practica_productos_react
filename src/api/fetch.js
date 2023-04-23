@@ -26,5 +26,6 @@ export const consultation = async (url) => {
 
     console.log(error);
     throw new Error('Error al conectar con la API');
+
   }
 };
