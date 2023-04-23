@@ -14,6 +14,7 @@ export const getProducts = async (url) => {
       photo: item.thumbnail,
       price: item.price,
       rating: item.rating,
+      
     }));
 
     return products;
