@@ -9,7 +9,7 @@ export const MenShoes = () => {
   return (
 
     <> 
-    
+    <h2 className="categoria text-left"> Zapatillas</h2>
     <GridProducts category={category} />
 
     </>

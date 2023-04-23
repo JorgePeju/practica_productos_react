@@ -8,7 +8,8 @@ export const Laptops = () => {
   return (
 
     <> 
-    
+
+    <h2 className="categoria text-left"> Portátiles</h2>
     <GridProducts category={category} />
 
     </>

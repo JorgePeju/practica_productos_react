@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <header>
+      <header className="bg-cuasi color-light text-center header">
 
         <p>Práctica SPA</p>
 
@@ -15,7 +15,7 @@ function App() {
       
       <AppRouter/>
     
-      <footer>
+      <footer className="bg-cuasi color-light text-center header">
 
         <p>Footer</p>
 

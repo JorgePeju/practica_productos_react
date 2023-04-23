@@ -8,8 +8,9 @@ export const Sunglasses = () => {
 
   return (
 
-    <> 
-    
+    <>
+
+    <h2 className="categoria text-left"> Gafas de sol</h2>
     <GridProducts category={category} />
 
     </>

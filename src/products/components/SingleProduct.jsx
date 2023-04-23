@@ -1,28 +1,37 @@
 import { Link } from 'react-router-dom';
 
-export const SingleProduct = ({id, title,description, photo, price, rating, }) => {
+export const SingleProduct = ({ id, title, description, photo, price, rating, }) => {
 
   return (
 
     <>
-    <article id={id}>
+      <article className="centrado box" id={id}>
 
-          <h3> {title} </h3>
+        <div className="div-card text-center">
 
-          <div>
+          <h3 className="text-center margin-1"> {title} </h3>
 
-            <img src={photo} alt={title} title={title} />
+          <div className='img-container'>
+
+            <img  src={photo} alt={title} title={title} />
 
           </div>
 
-          <p> Precio: {price} € </p>
+          <p className='margin-1 text-left'> Precio: {price} € </p>
 
-          <button>
+          <div className='img-container'>
+
+          <button className="auto bt-view">
 
             <Link to={`/index/detail-view/${id}`}> Vista Detalle </Link>
 
           </button>
-        </article>
+
+          </div>
+
+        </div>
+
+      </article>
     </>
 
   )

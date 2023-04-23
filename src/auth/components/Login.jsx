@@ -1,76 +1,82 @@
 import { useContext } from 'react';
 import { useForm } from '../../hooks/useForm'
 import { UserContext } from '../context/UserContext'
-import { useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 
 export const Login = () => {
 
-  const {handleChange} = useForm('');
+    const { handleChange } = useForm('');
 
-  const {setUser} = useContext(UserContext);
+    const { setUser } = useContext(UserContext);
 
- const navigateTo = useNavigate()
+    const navigateTo = useNavigate()
 
-  const handleSubmit = (ev) => {
+    const handleSubmit = (ev) => {
 
-      ev.preventDefault()
+        ev.preventDefault()
 
-      const user = {
+        const user = {
 
-          id: Date.now(),
-          username: ev.target.user.value,
-          password: ev.target.password.value,
-          date: new Date()
+            id: Date.now(),
+            username: ev.target.user.value,
+            password: ev.target.password.value,
+            date: new Date()
 
-      }
+        }
 
-     setUser(user)
-     
-     navigateTo('/index')
-  }
+        setUser(user)
 
-  return (
-      <>
-      
-          <div>
-            ¿Aún no tienes una cuenta?, pulse <Link to='/register'>aquí</Link> para registrarse
-          </div>
+        navigateTo('/index')
+    }
 
-          <div className="login flex text-center justify-text">
+    return (
+        <>
+            <section className="flex centrado flex-column margin-2">
 
-              <form onSubmit={handleSubmit} >
+                 <p className="fsize-2r">Login</p>
 
-                  <input
+                <div className="text-center margin-1">
+                    ¿Aún no tienes una cuenta?, pulse <Link to='/register'>aquí</Link> para registrarse
+                </div>
 
-                      type="text"
-                      placeholder="Usuario"
-                      name="user"
-                      onChange={handleChange}
-
-                  />
-
-                  <input className="pass"
-
-                      type="password"
-                      placeholder="Contraseña"
-                      name="password"
-                      onChange={handleChange}
-
-                  />
-
-                  <input
-
-                      type="submit"
-                      value="Log in"
-
-                  />
+                <div className="login text-center justify-text">
 
 
 
-              </form>
+                    <form onSubmit={handleSubmit} >
 
-          </div>
-      </>
-  )
+                        <input
+
+                            type="text"
+                            placeholder="Usuario"
+                            name="user"
+                            onChange={handleChange}
+
+                        />
+
+                        <input className="pass"
+
+                            type="password"
+                            placeholder="Contraseña"
+                            name="password"
+                            onChange={handleChange}
+
+                        />
+
+                        <input
+
+                            type="submit"
+                            value="Log in"
+
+                        />
+
+
+
+                    </form>
+
+                </div>
+            </section>
+        </>
+    )
 }
