@@ -80,6 +80,10 @@
   margin: 2%;
 }
 
+.padding-2 {
+  padding: 2%;
+}
+
 .fsize-2r {
   font-size: 2rem;
 }
@@ -104,7 +108,6 @@
 }
 
 .buscando {
-  
   border-bottom: 1px solid var(--dark);
 }
 .container {
@@ -211,8 +214,30 @@ footer {
   outline: none;
 }
 
+.bt-back {
+
+  margin:10px;
+  max-width: 20%;
+  padding: 1%;
+  color: var(--light);
+  background-color: var(--dark);
+  border-radius: 5px;
+  border: solid var(--cuasi);
+  width: 100%;
+
+}
 .isActive {
   color: red;
+}
+
+.card-detail {
+  margin: 4%;
+  padding: 1%;
+}
+
+.info-detail {
+  padding: 2%;
+  margin-top: 2%;
 }
 
 @media screen and (min-width: 768px) {}

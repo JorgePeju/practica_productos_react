@@ -4,7 +4,7 @@ import { GridProducts } from "./GridProducts"
 export const Sunglasses = () => {
 
  
-  const category = 'sunglasses'
+  const category = 'sunglasses';
 
   return (
 

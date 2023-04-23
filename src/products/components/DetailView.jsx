@@ -1,33 +1,52 @@
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
+import { useNavigate } from 'react-router-dom'
 
 export const DetailView = () => {
 
-  let {id} = useParams();
+  let { id } = useParams();
 
   const url = import.meta.env.VITE_URL_PRODUCT_DJSON + id
-  
+
   const request = useFetch(url);
 
   const product = request.products
-    
+
+  const navigateTo = useNavigate()
+
   return (
 
     <>
-    <article>
+      <article>
 
-          <h3> {product.title} </h3>
 
+        <div className='card-detail flex space-even'>
           <div>
+            <button
+              className='bt-back'
+              onClick={() => navigateTo(-1)}
+            >Volver</button>
 
-            <img src={product.photo} alt={product.title} title={product.title} />
+            <div>
 
+              <img src={product.photo} alt={product.title} title={product.title} />
+
+            </div>
           </div>
-          <p>{product.description}</p>
-          <p> Precio: {product.price} € </p>
-          <p> Valoración: {product.rating} </p>
 
-        </article>
+          <div className='flex flex-column info-detail'>
+            <div className="margin-2 padding-2 justify-text">
+
+            <h3 className="margin-2"> {product.title} </h3>
+            <p className="margin-2">{product.description}</p>
+            <p className="margin-2"> Precio: {product.price} € </p>
+            <p className="margin-2"> Valoración: {product.rating} </p>
+            
+            </div>
+          </div>
+        </div>
+
+      </article>
     </>
 
   )
