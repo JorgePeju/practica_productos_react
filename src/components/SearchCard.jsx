@@ -7,8 +7,8 @@ export const SearchCard = ({ search }) => {
      
     if(!search) return
 
-    const request = useFetch(url)
-    const products = request.products
+    const {products, isLoading} = useFetch(url)
+    
     console.log(request)
 
     const filteredProducts = products.filter(product => (
@@ -24,6 +24,11 @@ export const SearchCard = ({ search }) => {
 
         <>
             <section>
+
+                {
+                  isLoading && <h2 className="text-left"> Buscando</h2>
+                }
+            
                 <div className="gap-1 container auto centrado">
 
                     {filteredProducts? (

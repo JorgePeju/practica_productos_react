@@ -23,9 +23,7 @@ export const SearchForm = ({setsearch}) => {
     <>
 
         <div>
-          <p className="fsize-2r">Buscar</p>
-
-          <h2 className="buscando text-left"> Buscando</h2>
+          <p className="fsize-2r buscar">Buscar</p>
 
           <form onSubmit={handleSubmit}>
 

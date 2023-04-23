@@ -6,15 +6,21 @@ import { SearchForm } from "./SearchForm"
 export const Search = () => {
 
 
-    const [search, setsearch] = useState('')
+  const [search, setsearch] = useState('')
 
   return (
 
     <>
-    
-    <SearchForm setsearch= {setsearch}/>
-    <SearchCard search={search}/>
-    
+      <section className="flex ">
+        <div className="margin-2 text-left">
+          <SearchForm setsearch={setsearch} />
+        </div>
+
+        <div className="margin-2 self-right">
+          <p className="fsize-2r">Resultados</p>
+          <SearchCard search={search} />
+        </div>
+      </section>
     </>
   )
 }
