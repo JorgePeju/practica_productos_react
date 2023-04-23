@@ -39,5 +39,5 @@ Se han usado las siguientes dependencias con estas versiones:
 
 ````
 
-
+## Link de despliegue: https://legendary-blancmange-2c8942.netlify.app/
 
