@@ -1,8 +1,6 @@
 
 
-export const consultation = async (env, param) => {
-
-  const url = env + param
+export const consultation = async (url) => {
 
   try {
 

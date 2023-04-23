@@ -1,10 +1,10 @@
 import { consultation } from '../../api/fetch';
 
-export const getProducts = async (env, param ) => {
+export const getProducts = async (url) => {
  
-  const request = await consultation(env, param);
+  const request = await consultation(url);
  
-  if (env === import.meta.env.VITE_URL_PRODUCT_DJSON) {
+  if (url.includes(import.meta.env.VITE_URL_PRODUCT_DJSON)) {
 
     const product = {
 

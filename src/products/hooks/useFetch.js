@@ -3,13 +3,13 @@ import { getProducts } from '../helpers/getProducts'
 
 
 
-export const useFetch = (env, param ) => {
-  
+export const useFetch = (url) => {
+
     const [products, setProducts] = useState([]);
     
     const consultProducts = async () => {
         
-        const productItem = await getProducts(env, param );
+        const productItem = await getProducts(url);
 
         setProducts(productItem);
 

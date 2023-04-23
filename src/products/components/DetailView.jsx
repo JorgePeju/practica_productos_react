@@ -5,7 +5,9 @@ export const DetailView = () => {
 
   let {id} = useParams();
 
-  const request = useFetch(import.meta.env.VITE_URL_PRODUCT_DJSON, id);
+  const url = import.meta.env.VITE_URL_PRODUCT_DJSON + id
+  
+  const request = useFetch(url);
 
   const product = request.products
     
