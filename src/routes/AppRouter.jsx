@@ -3,7 +3,8 @@ import { ProductsRoutes } from './ProductsRoutes'
 import { AuthRoutes } from './AuthRoutes'
 
 export const AppRouter = () => {
-
+    
+    
     return (
 
         <>
@@ -18,3 +19,17 @@ export const AppRouter = () => {
     )
 }
 
+// {
+//     status === 'noAuhtenticate' ? (
+
+//        <Route path='/' element={<AuthRoutes />} />,
+//        <Route path='/*' element={<Navigate to={'/'}/>} />
+       
+
+//     ) : (
+
+//        <Route path='/' element={<ProductsRoutes />} />,
+//        <Route path='/*' element={<Navigate to={'/'}/>} />
+
+//     )
+// }

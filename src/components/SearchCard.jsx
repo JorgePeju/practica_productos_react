@@ -9,8 +9,6 @@ export const SearchCard = ({ search }) => {
 
     const {products, isLoading} = useFetch(url)
     
-    console.log(request)
-
     const filteredProducts = products.filter(product => (
 
                product.category === 'mens-shoes' || 
@@ -19,7 +17,6 @@ export const SearchCard = ({ search }) => {
                
     ));
 
-    console.log(filteredProducts);
     return (
 
         <>

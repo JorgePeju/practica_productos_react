@@ -8,8 +8,6 @@ export const AuthRoutes = () => {
 
    <>
 
- 
-
     <main>
 
       <Routes>

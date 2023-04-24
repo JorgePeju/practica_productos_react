@@ -10,10 +10,9 @@ export const getProducts = async (url) => {
 
       id: item.id,
       title: item.title,
-      description: item.description,
       photo: item.thumbnail,
       price: item.price,
-      rating: item.rating,
+      category: item.category,
       
     }));
 
@@ -28,6 +27,7 @@ export const getProducts = async (url) => {
       description: request.description,
       photo: request.thumbnail,
       price: request.price,
+      category: request.category,
       rating: request.rating,
 
     };
